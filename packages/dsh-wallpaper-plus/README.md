@@ -20,7 +20,7 @@ Then open **Settings → General → Wallpaper** to import.
 
 ## Screenshots
 
-![Wallpaper](docs/screenshots/ScreenShot_2026-08-18_003634_497.png)
+![Wallpaper](docs/screenshots/screenshot-1.png)
 
 ## Development
 

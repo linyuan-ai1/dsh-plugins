@@ -19,9 +19,9 @@ Then open **Settings → General → Reply Card Color**.
 
 ## Screenshots
 
-![Reply Card Color](docs/screenshots/ScreenShot_2026-08-18_002706_284.png)
+![Reply Card Color](docs/screenshots/screenshot-1.png)
 
-![Reply Card Color 2](docs/screenshots/ScreenShot_2026-08-18_002747_972.png)
+![Reply Card Color 2](docs/screenshots/screenshot-2.png)
 
 ## Development
 

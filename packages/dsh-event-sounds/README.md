@@ -19,7 +19,7 @@ Then open **Settings → General → Event Sounds**.
 
 ## Screenshots
 
-![Event Sounds](docs/screenshots/ScreenShot_2026-08-18_004333_682.png)
+![Event Sounds](docs/screenshots/screenshot-1.png)
 
 ## Development
 
