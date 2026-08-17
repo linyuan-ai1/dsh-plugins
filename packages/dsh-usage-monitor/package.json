@@ -1,6 +1,6 @@
 {
   "name": "dsh-usage-monitor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "In-window floating usage dashboard for DeepSeek Harness (Go / DeepSeek / New API usage).",
   "type": "module",
   "main": "lib/index.js",
@@ -19,7 +19,7 @@
     },
     "plugin": {
       "schemaVersion": 1,
-      "category": "dashboard",
+      "category": "ui",
       "displayName": { "en": "Usage Panel", "zh-CN": "用量面板" },
       "summary": {
         "en": "Floating usage dashboard for Go / DeepSeek / New API accounts, with reminders.",

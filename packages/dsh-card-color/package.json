@@ -1,6 +1,6 @@
 {
   "name": "dsh-card-color",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Assistant reply-card color for DeepSeek Harness: soft-pastel presets with auto-follow theme.",
   "type": "module",
   "main": "lib/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "dsh-event-sounds",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Event notification sounds for DeepSeek Harness: task-done / question / approval cues (WebAudio, no audio assets).",
   "type": "module",
   "main": "lib/index.js",

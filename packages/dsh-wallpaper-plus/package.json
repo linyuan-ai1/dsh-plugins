@@ -1,6 +1,6 @@
 {
   "name": "dsh-wallpaper-plus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fullscreen wallpaper for DeepSeek Harness: image or short video, auto dark mode, video audio toggle.",
   "type": "module",
   "main": "lib/index.js",
