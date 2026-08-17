@@ -1,5 +1,5 @@
 {
-  "name": "dsh-usage-panel",
+  "name": "dsh-usage-monitor",
   "version": "0.1.0",
   "description": "In-window floating usage dashboard for DeepSeek Harness (Go / DeepSeek / New API usage).",
   "type": "module",

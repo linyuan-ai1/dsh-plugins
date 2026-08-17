@@ -1,11 +1,11 @@
-﻿# dsh-usage-panel
+# dsh-usage-monitor
 
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的用量面板 插件。
 
 ## 安装
 
 ``bash
-dsh plugin --profile web add dsh-usage-panel
+dsh plugin --profile web add dsh-usage-monitor
 ``
 
 ## 开发

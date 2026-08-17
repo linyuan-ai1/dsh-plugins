@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-usage-monitor
+      name: 'dsh-usage-monitor'
+

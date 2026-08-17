@@ -1,4 +1,4 @@
-# dsh-usage-panel
+# dsh-usage-monitor
 
 Floating **usage dashboard** for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): a collapsible panel showing your Go / DeepSeek / New API usage in the corner of the app.
 
@@ -11,7 +11,7 @@ Floating **usage dashboard** for [DeepSeek Harness](https://github.com/deepseek-
 ## Install
 
 ```bash
-dsh plugin --profile web add dsh-usage-panel
+dsh plugin --profile web add dsh-usage-monitor
 ```
 
 ## Development

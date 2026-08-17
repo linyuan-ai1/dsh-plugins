@@ -9,7 +9,7 @@
 | [`dsh-wallpaper-plus`](packages/dsh-wallpaper-plus) | 🖼️ 全屏壁纸：图片/短视频，自动深色，视频原声开关 | `dsh plugin add dsh-wallpaper-plus` |
 | [`dsh-card-color`](packages/dsh-card-color) | 🎨 AI 回复卡片颜色：5 预设，自动随主题 | `dsh plugin add dsh-card-color` |
 | [`dsh-event-sounds`](packages/dsh-event-sounds) | 🔔 事件声音：任务完成/提问/审批（WebAudio 合成） | `dsh plugin add dsh-event-sounds` |
-| [`dsh-usage-panel`](packages/dsh-usage-panel) | 📊 用量面板：Go/DeepSeek/New API 悬浮用量卡 | `dsh plugin add dsh-usage-panel` |
+| [`dsh-usage-monitor`](packages/dsh-usage-monitor) | 📊 用量面板：Go/DeepSeek/New API 悬浮用量卡 | `dsh plugin add dsh-usage-monitor` |
 
 ## 安装
 

@@ -1,4 +1,4 @@
-// dsh-usage-panel — Browser half.
+// dsh-usage-monitor — Browser half.
 //
 // Floating usage dashboard for DeepSeek Harness. It shows the Go / DeepSeek /
 // New API usage dashboard in a collapsible panel.
@@ -14,7 +14,7 @@
 // is rendered as part of the overlay.
 
 window.__ModuleLoader__.load({
-	id: "dsh-usage-panel",
+	id: "dsh-usage-monitor",
 	factory: (require) => {
 		var module = { exports: {} };
 		var exports = module.exports;
@@ -23,7 +23,7 @@ window.__ModuleLoader__.load({
 		let _react = require("react");
 
 		// ---------- persistence ----------
-		const PREFS_KEY = "dsh-usage-panel:open";
+		const PREFS_KEY = "dsh-usage-monitor:open";
 		let open = localStorage.getItem(PREFS_KEY) === "1";
 		function setOpen(v) { open = v; try { localStorage.setItem(PREFS_KEY, v ? "1" : "0"); } catch (e) { /* */ } }
 
@@ -131,7 +131,7 @@ window.__ModuleLoader__.load({
 		const inject = ["slots", "locale"];
 
 		function apply(ctx) {
-			ctx.effect(() => ctx.locale.register(NS, { zh, en }), "dsh-usage-panel: dictionaries");
+			ctx.effect(() => ctx.locale.register(NS, { zh, en }), "dsh-usage-monitor: dictionaries");
 			ctx.slots.inject("shell.overlay", () => ctx.slots.register({
 				name: "shell.overlay",
 				id: "usage-panel",
@@ -143,7 +143,7 @@ window.__ModuleLoader__.load({
 
 		exports.apply = apply;
 		exports.inject = inject;
-		exports.name = "dsh-usage-panel";
+		exports.name = "dsh-usage-monitor";
 		return module.exports;
 	}
 });
