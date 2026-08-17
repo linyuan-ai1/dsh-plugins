@@ -18,6 +18,10 @@ dsh plugin --profile web add dsh-wallpaper-plus
 
 Then open **Settings → General → Wallpaper** to import.
 
+## Screenshots
+
+![Wallpaper](docs/screenshots/ScreenShot_2026-08-18_003634_497.png)
+
 ## Development
 
 ```bash

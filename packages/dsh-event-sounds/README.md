@@ -17,6 +17,10 @@ dsh plugin --profile web add dsh-event-sounds
 
 Then open **Settings → General → Event Sounds**.
 
+## Screenshots
+
+![Event Sounds](docs/screenshots/ScreenShot_2026-08-18_004333_682.png)
+
 ## Development
 
 ```bash

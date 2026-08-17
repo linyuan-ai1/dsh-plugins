@@ -17,6 +17,12 @@ dsh plugin --profile web add dsh-card-color
 
 Then open **Settings → General → Reply Card Color**.
 
+## Screenshots
+
+![Reply Card Color](docs/screenshots/ScreenShot_2026-08-18_002706_284.png)
+
+![Reply Card Color 2](docs/screenshots/ScreenShot_2026-08-18_002747_972.png)
+
 ## Development
 
 ```bash
