@@ -1,0 +1,40 @@
+{
+  "name": "dsh-usage-panel",
+  "version": "0.1.0",
+  "description": "In-window floating usage dashboard for DeepSeek Harness (Go / DeepSeek / New API usage).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
+    "./client": { "types": "./lib/types/client/index.d.ts", "default": "./lib/client.js" },
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/index.js", "lib/client.js", "lib/types", "cordis.patch.yml", "README.md", "README.zh.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-ui-slots"],
+      "platform": "web",
+      "immediately": true
+    },
+    "plugin": {
+      "schemaVersion": 1,
+      "category": "dashboard",
+      "displayName": { "en": "Usage Panel", "zh-CN": "用量面板" },
+      "summary": {
+        "en": "Floating usage dashboard for Go / DeepSeek / New API accounts, with reminders.",
+        "zh-CN": "Go / DeepSeek / New API 用量悬浮面板，含用量提醒。"
+      }
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-locale": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.1.0-rc.6"
+  },
+  "scripts": { "check": "node --check lib/index.js && node --check lib/client.js" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "usage", "dashboard", "monitoring"],
+  "license": "MIT"
+}

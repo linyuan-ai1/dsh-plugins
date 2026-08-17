@@ -1,0 +1,39 @@
+{
+  "name": "dsh-card-color",
+  "version": "0.1.0",
+  "description": "Assistant reply-card color for DeepSeek Harness: soft-pastel presets with auto-follow theme.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
+    "./client": { "types": "./lib/types/client/index.d.ts", "default": "./lib/client.js" },
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/index.js", "lib/client.js", "lib/types", "cordis.patch.yml", "README.md", "README.zh.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-locale"],
+      "platform": "web",
+      "immediately": true
+    },
+    "plugin": {
+      "schemaVersion": 1,
+      "category": "ui",
+      "displayName": { "en": "Reply Card Color", "zh-CN": "回复卡片颜色" },
+      "summary": {
+        "en": "Choose the assistant reply-card color preset; auto-switches with light/dark theme.",
+        "zh-CN": "选择 AI 回复卡片的颜色预设，自动随深浅主题切换。"
+      }
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-locale": "^0.1.0-rc.6"
+  },
+  "scripts": { "check": "node --check lib/index.js && node --check lib/client.js" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "card", "color", "theme"],
+  "license": "MIT"
+}

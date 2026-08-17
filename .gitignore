@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output (we ship lib/ intentionally for no-build install, keep src too)
+# but exclude stray TS build artifacts
+*.tsbuildinfo
+dist/
+*.tgz
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local scratch
+scratch/

@@ -1,0 +1,65 @@
+{
+  "name": "dsh-wallpaper-plus",
+  "version": "0.1.0",
+  "description": "Fullscreen wallpaper for DeepSeek Harness: image or short video, auto dark mode, video audio toggle.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/types/client/index.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/types",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ],
+      "platform": "web",
+      "immediately": true
+    },
+    "plugin": {
+      "schemaVersion": 1,
+      "category": "ui",
+      "displayName": {
+        "en": "Wallpaper Plus",
+        "zh-CN": "壁纸增强"
+      },
+      "summary": {
+        "en": "Fullscreen image/video wallpaper with auto dark mode and audio toggle.",
+        "zh-CN": "全屏图片/视频壁纸，自动深色模式，视频原声开关。"
+      }
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-locale": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-ui-theme": "^0.1.0-rc.6"
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js"
+  },
+  "keywords": ["dsh-plugin", "deepseek-harness", "wallpaper", "theme"],
+  "license": "MIT"
+}

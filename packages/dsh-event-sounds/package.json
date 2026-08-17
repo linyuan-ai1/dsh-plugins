@@ -1,0 +1,39 @@
+{
+  "name": "dsh-event-sounds",
+  "version": "0.1.0",
+  "description": "Event notification sounds for DeepSeek Harness: task-done / question / approval cues (WebAudio, no audio assets).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
+    "./client": { "types": "./lib/types/client/index.d.ts", "default": "./lib/client.js" },
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/index.js", "lib/client.js", "lib/types", "cordis.patch.yml", "README.md", "README.zh.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-locale"],
+      "platform": "web",
+      "immediately": true
+    },
+    "plugin": {
+      "schemaVersion": 1,
+      "category": "ui",
+      "displayName": { "en": "Event Sounds", "zh-CN": "事件声音" },
+      "summary": {
+        "en": "Play a sound when a task completes, a question is asked, or an approval is requested.",
+        "zh-CN": "任务完成、提问、审批请求时播放提示音。"
+      }
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-locale": "^0.1.0-rc.6"
+  },
+  "scripts": { "check": "node --check lib/index.js && node --check lib/client.js" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "sound", "notification", "audio"],
+  "license": "MIT"
+}
