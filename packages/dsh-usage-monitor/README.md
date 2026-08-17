@@ -36,3 +36,10 @@ npm publish --registry https://registry.npmjs.org
 ## License
 
 MIT
+
+## Publish
+
+```bash
+npm version patch
+npm publish --registry=https://registry.npmjs.org/
+```
